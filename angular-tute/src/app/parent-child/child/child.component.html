@@ -1,0 +1,8 @@
+<p>
+  Parent To Child Message: 
+  {{childMessage}}
+</p>
+<div>
+  Child Text Box Message: <input #childToParentMessage (input)="onKey(childToParentMessage.value)">
+</div>
+

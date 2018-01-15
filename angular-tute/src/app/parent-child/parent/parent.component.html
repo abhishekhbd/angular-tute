@@ -1,0 +1,18 @@
+<p>
+  <!-- parent works!
+  <app-child [childMessage]="parentMessage"></app-child>
+  Parent Text Box: <input #name (input)="onKey(name.value)"> -->
+
+  ------------------------------
+
+  <app-child (childToParentMessageEvent)="receiveMessage($event)"></app-child>
+  Message rerecived To Parent: {{parentMessageFromChild}}
+</p>
+
+<div>
+  <ul>
+    <li class="{{steps.step1}}">Step 1</li>
+    <li class="{{steps.step2}}">Step 2</li>
+    <li class="{{steps.step3}}">Step 3</li>
+  </ul>
+</div>
